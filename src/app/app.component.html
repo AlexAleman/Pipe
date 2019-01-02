@@ -1,0 +1,25 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<h1>Tabla prueba de password</h1>
+<br>
+
+<input placeholder="Introduce la contraseña..." id="password" type="text" name="input_password">
+<button class="btn btn-primary" (click)=addBlock()>Enviar</button>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Pipe</th>
+      <th scope="col">Effect</th>
+    </tr>
+  </thead>
+  <tbody>
+    <app-value [chose]="chose" [contadorTotal]="contadorTotal" [globalPasswords]="globalPasswords"></app-value>
+  </tbody>
+</table>
+
+<button class="btn btn-primary" (click)="change(chose)">{{state}} password</button>
+
+

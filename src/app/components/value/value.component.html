@@ -1,0 +1,7 @@
+
+  <tr *ngFor="let i of contadorTotal">
+    <th scope="row">{{i}}</th>
+    <td>{{pipe}}</td>
+    <td>{{globalPasswords[i-1] | lockUnlockPassword:chose}}</td>
+  </tr>
+
